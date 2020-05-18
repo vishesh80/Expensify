@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ExpenseItem component test 1`] = `
+<li>
+  <h1>
+    eg
+  </h1>
+  <p>
+    12$ - 1st January 1970
+  </p>
+  <button
+    onClick={[Function]}
+  >
+    Remove
+  </button>
+  <[object Object]
+    exact={true}
+    to="/edit/eg"
+  >
+    Edit
+  </[object Object]>
+</li>
+`;
