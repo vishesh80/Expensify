@@ -41,7 +41,9 @@
     "test": "jest --config=jest.config.json",
     "server": "webpack-dev-server",
     "build": "webpack",
-    "buildProd": "webpack -p --env prod"
+    "buildProd": "webpack -p --env prod",
+    "start": "node index.js",
+    "heroku-postbuild": "npm run buildProd"
   },
   "description": ""
 }
