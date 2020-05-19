@@ -4,12 +4,14 @@ import {connect} from 'react-redux';
 import ExpenseItem from '../ExpenseItem';
 import Filters from '../Filters';
 import filter from '../../modules/filter';
+import Total from '../Total';
 
 export let d = (props) => (
 
 <div>
 
     <h1>Dashboard</h1>
+    <Total {...props}/>
     <Filters/>
     <ul>
         {filter(props.expenses,props.filters).map(i => <ExpenseItem key={i.id} {...i}/>)}
