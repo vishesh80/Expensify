@@ -16,6 +16,9 @@ const ER = (state = [], action) => {
         case 'ADD':
             return [...state, action.expense];
 
+        case 'GET_VALUES':
+            return [...action.expenses];
+
         case 'EDIT':
             return state.map(e => {
 
@@ -30,6 +33,20 @@ const ER = (state = [], action) => {
     }
 };
 
+
+const AR = (state = {}, action) => {
+
+    switch (action.type) {
+
+        case 'LOGIN':
+            return {uid: action.uid};
+
+        case 'LOGOUT':
+            return {};
+
+        default: return state;
+    }
+};
 
 const FR = (state = defaultFilter, action) => {
 
@@ -55,4 +72,4 @@ const FR = (state = defaultFilter, action) => {
 };
 
 
-export {ER , FR};
+export {ER , FR , AR};
