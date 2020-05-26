@@ -1,5 +1,6 @@
 import React from 'react';
 import filter from '../modules/filter';
+import { NavLink } from 'react-router-dom';
 
 const Total = props => {
 
@@ -7,12 +8,14 @@ const Total = props => {
     const length = array.length;
     
     return (
-    <div>
-        <h3>Viewing {(length === 1)? length+" expense": length+" expenses"} totalling ${
-            array
-            .map(e => Number(e.amount))
-            .reduce((sum,value) => sum + value,0)
-        }</h3>
+    <div className="total">
+            <p>Viewing <strong>{length}</strong>{(length === 1) ? " expense" : " expenses"} totalling ₹<strong>{
+                array
+                    .map(e => Number(e.amount))
+                    .reduce((sum, value) => sum + value, 0)
+            }</strong></p>
+
+            <NavLink to="/create" exact={true} className="btn">Create Expense</NavLink>
     </div>
     );
 }

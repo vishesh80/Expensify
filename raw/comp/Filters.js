@@ -19,18 +19,12 @@ class Filters extends React.Component{
     render()
     {
         return (
-            <div>
-                <label>Set Text Filter</label>
-                <input type="text" value={this.props.text} onChange={e => this.props.dispatch(setTextFilter(e.target.value))} />
-                <br />
-                <br />
-                <label>Sort By</label>
-                <select value={this.props.sortBy} onChange={e => (e.target.value === "amount") ? this.props.dispatch(sa()) : this.props.dispatch(sd())}>
+            <div className="filters">
+                <input type="text" placeholder="Search by Text" className="filter" value={this.props.text} onChange={e => this.props.dispatch(setTextFilter(e.target.value))} />
+                <select className="filter" value={this.props.sortBy} onChange={e => (e.target.value === "amount") ? this.props.dispatch(sa()) : this.props.dispatch(sd())}>
                     <option value="amount">Amount</option>
                     <option value="date">Date</option>
                 </select>
-                <br />
-                <br />
                 <DateRangePicker
                     startDate={this.state.startDate} // momentPropTypes.momentObj or null,
                     startDateId="your_unique_start_date_id" // PropTypes.string.isRequired,

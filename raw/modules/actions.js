@@ -1,4 +1,4 @@
-import "@babel/polyfill";
+//import "@babel/polyfill";
 import moment from 'moment';
 import { v4 as uuid } from 'uuid';
 import { database } from './firebase'; 

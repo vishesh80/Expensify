@@ -11,10 +11,9 @@ export let d = (props) => (
 
 <div>
     <Header />
-    <h1>Dashboard</h1>
     <Total {...props}/>
     <Filters/>
-    <ul>
+    <ul className="expenses">
         {filter(props.expenses,props.filters).map(i => <ExpenseItem key={i.id} {...i}/>)}
     </ul>
 </div>

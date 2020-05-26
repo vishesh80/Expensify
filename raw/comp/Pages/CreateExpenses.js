@@ -1,4 +1,4 @@
-import "@babel/polyfill";
+//import "@babel/polyfill";
 import React from 'react';
 import Header from '../Header';
 import ExpenseForm from '../ExpenseForm';
@@ -9,7 +9,6 @@ const c = p => (
 
 <div>
     <Header />
-    <h1>Create account</h1>
         <ExpenseForm submit={expense => addToFirebase(expense, p.dispatch,p.uid)
                                         .then(m => p.history.push('/dashboard'))
                                         .catch(err => console.log(err))}

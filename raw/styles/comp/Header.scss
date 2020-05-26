@@ -1,0 +1,29 @@
+.header
+{
+    width: 100%;
+    min-width: 400px;
+    max-width: 1500px;
+    margin: auto;
+    background-color: rgb(14, 39, 71);
+    padding: 2em 3em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .navlink
+    {
+        text-decoration: none;
+        color: white !important;
+        font-size: 2.5rem;
+    }
+
+    button
+    {
+        background-color: rgb(32, 166, 255);
+        font-size: 1.1rem;
+        padding: .4em .8em;
+        border: none;
+        color: white;
+    }
+
+}

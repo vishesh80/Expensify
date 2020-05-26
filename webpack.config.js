@@ -5,7 +5,7 @@ module.exports = env => {
   const isProd = env === 'prod';
 
   return {
-    entry: "./raw/script.js",
+    entry: ["@babel/polyfill", "./raw/script.js"],
 
     output: {
       path: __dirname + "/public/",
@@ -13,29 +13,25 @@ module.exports = env => {
     },
 
     plugins: [
-
       new CssExt({
         // Options similar to the same options in webpackOptions.output
         // both options are optional
-        filename: "styles.css"
-      })
-
+        filename: "styles.css",
+      }),
     ],
 
     module: {
       rules: [
-
         {
           test: /\.js$/,
           exclude: /node-modules/,
-          loader: "babel-loader" 
+          loader: "babel-loader",
         },
 
         {
           test: /\.(s)?css$/,
           use: [CssExt.loader, "css-loader", "sass-loader"],
-        }
-
+        },
       ],
     },
 

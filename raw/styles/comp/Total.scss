@@ -1,0 +1,26 @@
+.total
+{
+    width: 100%;
+    max-width: 1500px;
+    min-width: 400px;
+    padding: 2em 3em;
+    background-color: rgba(220, 220, 220, 0.185);
+    margin: auto;
+
+    p
+    {
+        font-size: 2rem;
+    }
+
+    .btn
+    {
+        text-decoration: none;
+        margin: 0;
+        display: inline-block;
+        background-color: rgb(32, 166, 255);
+        font-size: 1.1rem;
+        padding: .4em .8em;
+        border: none;
+        color: white;
+    }
+}

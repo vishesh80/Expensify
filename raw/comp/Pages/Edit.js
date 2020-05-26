@@ -7,7 +7,6 @@ import { updateFirebase } from '../../modules/actions';
 const Edit = p =>  (
     <div>
         <Header/>
-        <h1>Edit Expense Item</h1>
         <ExpenseForm 
                 initialState = {p.expenses.filter(e => p.match.params.id === e.id)[0]} 
                 

@@ -1,0 +1,29 @@
+.form
+{
+    
+    width: 80%;
+    max-width: 1000px;
+    height: 500px;
+    margin: 2em auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-evenly;
+
+    input,textarea
+    {
+        padding: .5em 1em;
+        font-size: 1.2rem;
+    }
+
+    button
+    {
+        background-color: rgb(32, 166, 255);
+        font-size: 1.1rem;
+        padding: .4em .8em;
+        border: none;
+        color: white;
+    }
+    
+}

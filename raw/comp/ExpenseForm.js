@@ -85,7 +85,7 @@ class ExpenseForm extends React.Component
 
     render()
     {
-        return (<div>
+        return (<div className="form">
         <input type="text" value={this.state.description} placeholder="Description" onChange={this.onDchange}/><br />
         <input type="text" value={this.state.amount} placeholder="Amount" onChange={this.onAchange}/><br />
 

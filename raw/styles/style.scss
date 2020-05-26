@@ -1,11 +1,28 @@
+@import './comp/Pages/Login.scss';
+@import './comp/Header.scss';
+@import './comp/Filters.scss';
+@import './comp/Total.scss';
+@import './comp/ExpenseList.scss';
+@import './comp/Form.scss';
 
+*
+{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', Geneva, Verdana, sans-serif;
+    color: rgba(43, 43, 43, 0.884);
+    box-sizing: border-box;
+}
 
 body
 {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', Geneva, Verdana, sans-serif;
-    color: rgb(43, 43, 43);
     padding: 0;
     margin: 0;
 }
 
-a{ margin-right: 1em;}
+.root
+{
+    width: 100%;
+    height: 100vh;
+}
+
+
+
