@@ -1,7 +1,7 @@
 import * as firebase from 'firebase';
 
 const firebaseConfig = {
-    apiKey: "AIzaSyBekpbDlds3NnyOWH2iiL9ZUXWhZKCYiWk",
+    apiKey: "Your API KEY",
     authDomain: "fir-testing-c7deb.firebaseapp.com",
     databaseURL: "https://fir-testing-c7deb.firebaseio.com",
     projectId: "fir-testing-c7deb",
